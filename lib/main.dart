@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practical1/one%20tree%20world%20application/loginscreen.dart';
+
 import 'package:practical1/pages%20unsure/Trainer%20list.dart';
 import 'package:practical1/pages%20unsure/trainer%20details%20page%202.dart';
 import 'package:practical1/profile%20document%20upload%20pages/Newuploadpdf.dart';
@@ -52,17 +52,6 @@ import 'loginpage  INter9 app/login.dart';
 import 'loginpage  INter9 app/registerscreen.dart';
 import 'loginpage  INter9 app/settings.dart';
 import 'loginpage  INter9 app/splash screen.dart';
-import 'one tree world application/All products.dart';
-import 'one tree world application/Homepage1.dart';
-import 'one tree world application/change password.dart';
-
-import 'one tree world application/editprofile.dart';
-import 'one tree world application/forgot password.dart';
-import 'one tree world application/order.dart';
-import 'one tree world application/dashbord11.dart';
-import 'one tree world application/registerscreen.dart';
-import 'one tree world application/shop.dart';
-import 'one tree world application/splashscreen.dart';
 
 
 
@@ -79,15 +68,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
      // title: 'Flutter Demo',
       theme: ThemeData(),
-      // initialRoute: '/splashScreen', // Initial route
-      // routes: {
-      //   '/splashScreen':(context) =>SplashScreen(),
-      //   '/registerscreen': (context) =>registerscreen(),
-      //   '/dogprofile': (context) =>dogprofile(email: '',),
-      //   '/loginscreen': (context) =>Loginscreen(),
-      //   '/dashboard': (context) => dashbordctselect(email: '', name: '',),
-      //   '/detailscreen':(context) => DetailScreen(),
-      // },
+      initialRoute: '/splashScreen', // Initial route
+      routes: {
+        '/splashScreen':(context) =>SplashScreen(),
+        '/registerscreen': (context) =>registerscreen(),
+        '/dogprofile': (context) =>dogprofile(email: '',),
+        '/loginscreen': (context) =>Loginscreen(),
+        '/dashboard': (context) => dashbordctselect(email: '', name: '',),
+        '/detailscreen':(context) => DetailScreen(),
+      },
     //   initialRoute: '/splashScreen', // Initial route
     //    routes: {
     //      '/splashScreen':(context) =>page1(),
@@ -104,7 +93,7 @@ class MyApp extends StatelessWidget {
     //
     //   },
 
-      home:Loginscreen(),
+     // home:registerscreen(),
     );
   }
 }
